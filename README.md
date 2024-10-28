@@ -33,7 +33,7 @@ This application is a comprehensive tool designed to record heart sounds from di
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/heart-valve-sound-recorder.git
+   git clone https://github.com/SiergiejPOL/smart-heart-auscultation.git
    cd heart-valve-sound-recorder
    
 2. **Install Dependencies**
