@@ -1,4 +1,6 @@
  Heart Valve Sound Recorder & SMART Auscultation
+ 
+![DALL·E 2024-10-27 19 52 57 - A heart-shaped icon with a stethoscope draped around it, a blood pressure monitor, and an EKG rhythm line displayed prominently in the center  The bac](https://github.com/user-attachments/assets/b2960bea-94d7-41a3-b009-c50a3ea9b43c)
 
 This application is a comprehensive tool designed to record heart sounds from different heart valves, perform real-time analysis, detect potential anomalies like Premature Ventricular Contractions (PVCs), and generate detailed PDF reports. It also includes a SMART Auscultation feature that guides users through a full heart auscultation process with step-by-step instructions.
 
@@ -105,3 +107,12 @@ Functions:
 GUI Components:
 Tkinter Frames and Widgets: Organized into frames for patient information, valve recordings, SMART auscultation instructions, and real-time visualization.
 Styles: Custom styles for consistency in appearance.
+
+Screenshots:
+
+![image](https://github.com/user-attachments/assets/e59b307e-7338-4f80-86c0-22d2a68b2dd2)
+
+![image](https://github.com/user-attachments/assets/7529316b-7225-4b94-bae8-ae1b5a39a087)
+
+
+
