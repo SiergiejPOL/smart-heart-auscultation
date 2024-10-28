@@ -115,4 +115,7 @@ Screenshots:
 ![image](https://github.com/user-attachments/assets/7529316b-7225-4b94-bae8-ae1b5a39a087)
 
 
+![obraz](https://github.com/user-attachments/assets/acaa39aa-8f8e-4f60-b054-123d355204fa) ![obraz](https://github.com/user-attachments/assets/e988f7eb-e1bf-433e-b73f-581da5f464e1) ![obraz](https://github.com/user-attachments/assets/89ded25a-320a-484e-be9a-3f29851170d4)
+
+
 
