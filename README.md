@@ -59,14 +59,13 @@ Select Output Directory: Upon saving, you'll be prompted to select a directory t
 Set Recording Duration: For each heart valve, you can set a custom recording duration in seconds.
 Start Recording: Click the "Record [Valve Name]" button corresponding to the valve you want to record.
 Real-time Analysis: During recording, you'll see:
-
-PCG Plot: A real-time Phonocardiogram of the heart sounds.
-Heart Rate: Current and average heart rate displayed.
-PVC Counter: Number of detected PVCs.
-Rhythm and Regularity: Classification of the heart rhythm.
-Animated Heart Icon: A heart icon that beats in sync with the detected heart rate.
-Recording Countdown: A timer indicating the remaining recording time.
-Generate Report: After recording, a PDF report is automatically generated with all relevant data.
+- PCG Plot: A real-time Phonocardiogram of the heart sounds.
+- Heart Rate: Current and average heart rate displayed.
+- PVC Counter: Number of detected PVCs. (still not working)
+- Rhythm and Regularity: Classification of the heart rhythm.
+- Animated Heart Icon: A heart icon that beats in sync with the detected heart rate.
+- Recording Countdown: A timer indicating the remaining recording time.
+- Generate Report: After recording, a PDF report is automatically generated with all relevant data.
 
 5. **SMART Auscultation**
 Start SMART Auscultation: Click the "Start SMART Auscultation" button.
@@ -74,36 +73,35 @@ Guided Process: The application will guide you through different auscultation po
 Recording and Analysis: At each point, recordings are made, and real-time analysis is performed.
 Completion: After all points are completed, a comprehensive PDF report is generated summarizing the findings.
 
-Files Generated
+6. **Files Generated**
 Audio Recordings: .wav files for each valve recorded.
 PCG Plots: .png images of the Phonocardiograms.
 Heart Rate Trend Graphs: .png images showing heart rate over time.
 RR Intervals Plot: .png images showing RR intervals and detected PVCs.
 PDF Reports: Detailed reports including all the above data.
 
-6. **Code Structure**
+7. **Code Structure**
 Global Variables: Variables used throughout the application for state management.
 
 Functions:
+- create_directory: Manages the creation of the output directory.
+- update_countdown: Updates the recording countdown timer.
+- update_plot: Refreshes the PCG plot during recording.
+- detect_pvc: Improved function to detect PVCs using median and MAD.
+- classify_heart_rhythm: Classifies heart rhythm based on heart rate and intervals.
+- bandpass_filter: Applies a bandpass filter to the audio data.
+- calculate_heart_rate: Calculates heart rate and detects PVCs.
+- plot_rr_intervals: Plots RR intervals and highlights detected PVCs.
+- calculate_hrv: Calculates HRV metrics like SDNN and RMSSD.
+- animate_heart: Manages the animation of the heart icon.
+- generate_pdf_report: Creates a PDF report for individual recordings.
+- generate_smart_pdf_report: Creates a comprehensive PDF report for SMART Auscultation.
+- record_audio: Handles the audio recording and real-time analysis.
+- start_recording: Initiates the recording process.
+- start_smart_auscultation: Begins the SMART Auscultation process.
+- stop_recording: Stops any ongoing recording.
+- save_patient_data: Saves patient information entered in the GUI.
 
-create_directory: Manages the creation of the output directory.
-update_countdown: Updates the recording countdown timer.
-update_plot: Refreshes the PCG plot during recording.
-detect_pvc: Improved function to detect PVCs using median and MAD.
-classify_heart_rhythm: Classifies heart rhythm based on heart rate and intervals.
-bandpass_filter: Applies a bandpass filter to the audio data.
-calculate_heart_rate: Calculates heart rate and detects PVCs.
-plot_rr_intervals: Plots RR intervals and highlights detected PVCs.
-calculate_hrv: Calculates HRV metrics like SDNN and RMSSD.
-animate_heart: Manages the animation of the heart icon.
-generate_pdf_report: Creates a PDF report for individual recordings.
-generate_smart_pdf_report: Creates a comprehensive PDF report for SMART Auscultation.
-record_audio: Handles the audio recording and real-time analysis.
-start_recording: Initiates the recording process.
-start_smart_auscultation: Begins the SMART Auscultation process.
-stop_recording: Stops any ongoing recording.
-save_patient_data: Saves patient information entered in the GUI.
 GUI Components:
-
 Tkinter Frames and Widgets: Organized into frames for patient information, valve recordings, SMART auscultation instructions, and real-time visualization.
 Styles: Custom styles for consistency in appearance.
